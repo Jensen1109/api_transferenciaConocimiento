@@ -1,16 +1,16 @@
 const UsuariosActivosConPublicaciones = async () => {
-    // 1️⃣ Obtener usuarios
+    // 1️ Obtener usuarios
     const resUsers = await fetch("http://localhost:3000/users");
     const users = await resUsers.json();
 
-    // 2️⃣ Obtener publicaciones
+    // 2️ Obtener publicaciones
     const resPosts = await fetch("http://localhost:3000/posts");
     const posts = await resPosts.json();
 
-    // 3️⃣ Filtrar usuarios activos
+    // 3️ Filtrar usuarios activos
     const usuariosActivos = users.filter(user => user.active === true);
 
-    // 4️⃣ Mostrar resultado
+    // 4️ Mostrar resultado
     console.log("Usuarios activos y cantidad de publicaciones:");
 
     usuariosActivos.forEach(user => {
