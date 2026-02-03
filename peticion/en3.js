@@ -28,4 +28,4 @@ const BuscarPublicacionPorId = async (idPost) => {
 };
 
 // Ejecución
-BuscarPublicacionPorId(3);
+BuscarPublicacionPorId(8);
